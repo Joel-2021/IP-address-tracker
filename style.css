@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-container{
+    background-image: url(/images/pattern-bg.png);
+    font-size: 18px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+    position: relative;
+
+}
+h1{
+    padding: 1%;
+    font-weight: 700;
+}
+h4{
+   color: hsl(0, 0%, 59%);
+   font-size: 15px;
+   padding: 5px;
+}
+p{
+   color: hsl(0, 0%, 17%);
+    font-weight: 700;
+   padding: 5px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+}
+input{
+    height: 40px;
+    width: 40%; 
+    margin: 0%;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+}
+input[type=text] {
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+input::placeholder{
+    padding-left: 2px;
+    
+}
+button{
+    background-color: hsl(0, 0%, 17%);
+    border-style: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 0px 5px 5px 0px;
+}
+.location-info{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 70%;
+    height: 150px;
+    z-index: 1;
+}
+.location-info-row{
+    border-right: 1px solid hsl(0, 0%, 59%);
+    padding: 2%;
+    height: 50%;
+    width: 20%;
+    text-align: left;
+}
+.location-info-row:last-child{
+    border-right: none;
+}
+#map {
+    margin-top: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+     width: 100vw;
+     height: 60vh;
+     z-index: 0;
+    }
+
+@media only screen and (max-width: 800px) {
+
+    .location-info-row,.location-info{
+      width: fit-content;
+    }
+      
+  }
