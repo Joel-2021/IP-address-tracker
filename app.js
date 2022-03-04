@@ -1,4 +1,4 @@
-const ip_Tracker_Url = "http://ip-api.com/json/";
+const ip_Tracker_Url = "https://ip-api.com/json/";
 const fields ="?fields=status,country,region,regionName,city,zip,lat,lon,timezone,isp,query,offset";
 
 var input = document.querySelector("input");
